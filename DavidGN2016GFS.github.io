@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Gozar - Data Analyst</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+            text-align: center;
+        }
+
+        header {
+            background: #1f2937;
+            color: white;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-top: 5px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            background: #1f2937;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>David Gozar</h1>
+        <p>Data Analyst | SQL | Power BI | Python | Finanzas</p>
+    </header>
+
+    <div class="container">
+        <h2>Bienvenido</h2>
+        <p>
+            Soy un analista de datos apasionado por transformar información
+            en decisiones. Trabajo con SQL, Power BI, Python y análisis financiero.
+        </p>
+
+        <h2>Proyectos destacados</h2>
+        <ul style="text-align: left; max-width: 600px; margin: auto; font-size: 18px;">
+            <li>📊 Dashboard financiero en Power BI</li>
+            <li>🤖 Automatización de reportes con Python</li>
+            <li>📈 Modelo de predicción de series temporales</li>
+            <li>🗄 Optimización de consultas SQL</li>
+        </ul>
+
+        <h2>Contacto</h2>
+        <p>Email: <strong>tu-email@ejemplo.com</strong></p>
+        <p>LinkedIn: <strong>https://linkedin.com/in/tu-perfil</strong></p>
+    </div>
+
+    <footer>
+        © 2025 David Gozar — Data Analyst
+    </footer>
+
+</body>
+</html>
