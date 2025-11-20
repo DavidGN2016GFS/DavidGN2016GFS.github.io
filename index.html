@@ -5,63 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>David Gozar - Data Analyst Portfolio</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f4f4f4;
-            color: #333;
-        }
-
-        header {
-            background: #1f2937;
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-        }
-
-        h1 {
-            margin-bottom: 10px;
-        }
-
-        .container {
-            max-width: 1100px;
-            margin: 40px auto;
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        }
-
-        .project {
-            background: #fafafa;
-            border-left: 5px solid #1f2937;
-            padding: 20px;
-            margin-bottom: 25px;
-            border-radius: 8px;
-        }
-
-        .project h3 {
-            margin-top: 0;
-            color: #1f2937;
-        }
-
-        a {
-            color: #1f2937;
-            font-weight: bold;
-        }
-
-        footer {
-            margin-top: 40px;
-            padding: 20px;
-            background: #1f2937;
-            color: white;
-            text-align: center;
-        }
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; color: #333; }
+        header { background: #1f2937; color: white; padding: 40px 20px; text-align: center; }
+        h1 { margin-bottom: 10px; }
+        .container { max-width: 1100px; margin: 40px auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        .project { background: #fafafa; border-left: 5px solid #1f2937; padding: 20px; margin-bottom: 25px; border-radius: 8px; }
+        .project h3 { margin-top: 0; color: #1f2937; }
+        a { color: #1f2937; font-weight: bold; }
+        footer { margin-top: 40px; padding: 20px; background: #1f2937; color: white; text-align: center; }
     </style>
 </head>
 <body>
-
     <header>
         <h1>David Gozar</h1>
         <p>Data Analyst | SQL | Power BI | Python | Machine Learning</p>
@@ -75,15 +29,15 @@
             <h3>1. Customer Support Satisfaction Prediction</h3>
             <p><strong>Kaggle:</strong> <a href="https://www.kaggle.com/datasets/ddosad/ecommerce-customer-service-satisfaction">Dataset</a></p>
             <p><strong>GitHub:</strong> <a href="https://github.com/DavidGN2016GFS/ecommerce-consumer-behavior/releases/tag/v1.0.0">Repositorio</a></p>
-            <p>Se evaluaron SVM, Random Forest y ANN para predecir insatisfacción del cliente. RF obtuvo el mayor recall general, mientras que SVM y ANN lograron mejor equilibrio para la clase minoritaria. El análisis de texto reveló predominancia de comentarios neutros y fuerte desbalance.</p>
+            <p>Se evaluaron SVM, Random Forest y ANN para predecir insatisfacción del cliente. RF obtuvo el mayor recall general.</p>
         </div>
 
         <!-- Proyecto 2 -->
         <div class="project">
-            <h3>2. Pakistan E‑Commerce Retail Analysis</h3>
+            <h3>2. Pakistan E-Commerce Retail Analysis</h3>
             <p><strong>Kaggle:</strong> <a href="https://www.kaggle.com/datasets/zusmani/pakistans-largest-ecommerce-dataset">Dataset</a></p>
             <p><strong>GitHub:</strong> <a href="https://github.com/DavidGN2016GFS/pakistan-ecommerce-dataset/releases/tag/v1.0.0">Repositorio</a></p>
-            <p>Análisis descriptivo, correlaciones, NLP y modelos predictivos. Los modelos tuvieron bajo rendimiento por fuerte desbalance, pero Random Forest logró el mejor recall. Recomendaciones: mejor balanceo e hiperparámetros.</p>
+            <p>Análisis descriptivo, correlaciones, NLP y modelos predictivos.</p>
         </div>
 
         <!-- Proyecto 3 -->
@@ -91,40 +45,46 @@
             <h3>3. Product Width Prediction (SVR vs Random Forest)</h3>
             <p><strong>Kaggle:</strong> <a href="https://www.kaggle.com/code/erikbruin/google-analytics-eda-lightgbm-screenshots/input">Notebook base</a></p>
             <p><strong>GitHub:</strong> <a href="https://github.com/DavidGN2016GFS/fitness-tracker-analysis">Repositorio</a></p>
-            <p>Comparación entre SVR y Random Forest para predecir el ancho. RF alcanzó R²=0.91. Se recomienda añadir volumen, usar SHAP y optimizar hiperparámetros.</p>
+            <p>Comparación entre SVR y RF. RF alcanzó R²=0.91.</p>
         </div>
 
         <!-- Proyecto 4 -->
         <div class="project">
-            <h3>4. E‑Commerce Order Analysis</h3>
+            <h3>4. E-Commerce Order Analysis</h3>
             <p><strong>Kaggle:</strong> <a href="https://www.kaggle.com/datasets/bytadit/ecommerce-order-dataset">Dataset</a></p>
             <p><strong>GitHub:</strong> <a href="https://github.com/DavidGN2016GFS/ecommerce-order-analysis">Repositorio</a></p>
-            <p>Pipeline completo: limpieza, TF‑IDF, SMOTE y modelos ML. Random Forest obtuvo la mayor precisión y F1, por lo que fue elegido como modelo final para predicción de compras.</p>
+            <p>Pipeline completo con TF-IDF, SMOTE y Random Forest.</p>
         </div>
 
         <!-- Proyecto 5 -->
         <div class="project">
-            <h3>5. Multi‑Category Store Purchase Prediction</h3>
+            <h3>5. Multi-Category Store Purchase Prediction</h3>
             <p><strong>Kaggle:</strong> <a href="https://www.kaggle.com/datasets/mkechinov/ecommerce-behavior-data-from-multi-category-store/data">Dataset</a></p>
             <p><strong>GitHub:</strong> <a href="https://github.com/DavidGN2016GFS/ecommerce-width-prediction/releases/tag/v1.0.0">Repositorio</a></p>
-            <p>Se creó la variable objetivo is_purchase y se aplicó SMOTE. El Random Forest alcanzó 0.96 de accuracy y recall, seleccionándose como modelo final.</p>
+            <p>Random Forest alcanzó 0.96 de accuracy.</p>
         </div>
-
 
         <!-- Proyecto 6 -->
         <div class="project">
             <h3>6. UK Retail Sales Analysis (SMOTEENN + MLP)</h3>
             <p><strong>Kaggle:</strong> <a href="https://www.kaggle.com/datasets/kuldeeppatel08/ecommerce-uk-retailer">Dataset</a></p>
             <p><strong>GitHub:</strong> <a href="https://github.com/DavidGN2016GFS/analisis_ventas_online_retail">Repositorio</a></p>
-            <p>Identificación de patrones clave para diferenciar transacciones de alto y bajo valor. RF y MLP mostraron mayor estabilidad. Recomendaciones: nuevas variables, tuning avanzado y XGBoost.</p>
+            <p>Patrones clave para diferenciar transacciones de alto y bajo valor.</p>
         </div>
 
         <!-- Proyecto 7 -->
         <div class="project">
-            <h3>7. Predicción de Eficiencia en Ejecución Presupuestal (Perú 2012–2025)</h3>
+            <h3>7. Predicción de Eficiencia Presupuestal (Perú 2012–2025)</h3>
             <p><strong>Dataset:</strong> <a href="https://datosabiertos.mef.gob.pe/dataset/comparacion-de-presupuesto-ejecucion-gasto">MEF Perú</a></p>
             <p><strong>GitHub:</strong> <a href="https://github.com/DavidGN2016GFS/comparativo-gastos-peru-2012-2025">Repositorio</a></p>
-            <p>Random Forest optimizado con GridSearchCV y SMOTE para clasificar eficiencia presupuestal. El modelo predice categoría y probabilidad, permitiendo gestión preventiva en entidades públicas.</p>
+            <p>Random Forest optimizado con GridSearchCV y SMOTE.</p>
+        </div>
+
+        <!-- Proyecto 8 -->
+        <div class="project">
+            <h3>8. Housing & Income Analysis</h3>
+            <p><strong>GitHub:</strong> <a href="https://github.com/DavidGN2016GFS/housing_income_analysis">Repositorio</a></p>
+            <p>Análisis de ingresos y condiciones de vivienda usando técnicas estadísticas y visualización avanzada.</p>
         </div>
 
     </div>
@@ -132,6 +92,5 @@
     <footer>
         © 2025 David Gozar — Data Analyst
     </footer>
-
 </body>
-</html> 
+</html>
