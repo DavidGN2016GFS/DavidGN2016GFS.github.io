@@ -1,4 +1,4 @@
-<!-- Updated HTML with Project Portfolio (Option C) Inserted -->
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -10,13 +10,13 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: #f4f7fa;
-            color: #333;
+            background: #f4f4f4;
+            color: #222;
         }
         header {
-            background: #0f172a;
+            background: #1f2937;
             color: white;
-            padding: 60px 20px;
+            padding: 40px 20px;
             text-align: center;
         }
         header h1 {
@@ -24,133 +24,136 @@
             font-size: 2.5rem;
         }
         header p {
-            margin-top: 10px;
+            margin: 5px 0 0;
             font-size: 1.1rem;
-            opacity: 0.9;
+        }
+        .lang-switch {
+            margin-top: 15px;
+        }
+        .lang-switch button {
+            padding: 8px 15px;
+            margin: 0 5px;
+            background: #fbbf24;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
         }
         .container {
-            max-width: 1100px;
-            margin: 40px auto;
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
             background: white;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
         h2 {
-            color: #0f172a;
-            margin-top: 0;
-            border-left: 6px solid #0f172a;
+            border-left: 5px solid #fbbf24;
             padding-left: 10px;
+            margin-top: 40px;
+            color: #111;
         }
-        .section {
-            margin-bottom: 50px;
+        ul {
+            line-height: 1.6;
         }
-        .project {
-            background: #fafafa;
-            border-left: 5px solid #0f172a;
-            padding: 20px;
-            margin-bottom: 25px;
-            border-radius: 8px;
-        }
-        .project h3 {
-            margin-top: 0;
-            color: #0f172a;
-        }
-        a {
-            color: #0f172a;
-            font-weight: bold;
+        .contact a {
+            display: block;
+            margin-bottom: 5px;
+            color: #1d4ed8;
             text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>David Gozar</h1>
-        <p>Data Analyst | SQL | Power BI | Python | Machine Learning</p>
-    </header>
 
-    <div class="container">
+<header>
+    <h1 id="name">David Gozar</h1>
+    <p id="subtitle">Data Analyst | SQL | Power BI | Python | Machine Learning</p>
 
-        <!-- Existing content untouched above -->
+    <div class="lang-switch">
+        <button onclick="setLang('es')">ESPAÑOL</button>
+        <button onclick="setLang('en')">ENGLISH</button>
+    </div>
+</header>
 
-        <!-- 🔥 INSERTED: Portafolio Profesional (Opción C) -->
-        <div class="section">
-            <h2>Proyectos Destacados (Portafolio Profesional)</h2>
+<div class="container">
 
-            <div class="project">
-                <h3>1. Customer Support Satisfaction Prediction</h3>
-                <p><strong>Kaggle:</strong> dataset disponible</p>
-                <p><strong>GitHub:</strong> repositorio del proyecto</p>
-                <p><strong>Técnicas:</strong> SVM, Random Forest, MLP</p>
-                <p><strong>Descripción:</strong> Modelos clasificadores para predecir insatisfacción del cliente. RF logró el mejor recall tras tuning.</p>
-            </div>
+    <h2 id="about-title">Resumen Profesional</h2>
+    <p id="about-text">
+        Soy analista de datos con experiencia en modelado predictivo, dashboards ejecutivos y automatización de reportes. Ayudo a empresas a convertir datos en decisiones estratégicas mediante machine learning, análisis estadístico y visualización de datos.
+    </p>
 
-            <div class="project">
-                <h3>2. Pakistan E-Commerce Retail Analysis</h3>
-                <p><strong>Kaggle:</strong> dataset</p>
-                <p><strong>GitHub:</strong> repositorio</p>
-                <p><strong>Técnicas:</strong> EDA, correlaciones, NLP, RF</p>
-                <p><strong>Descripción:</strong> Análisis descriptivo del comportamiento de compra y modelos predictivos con texto.</p>
-            </div>
+    <h2 id="skills-title">Habilidades Técnicas</h2>
+    <ul id="skills-list">
+        <li><b>Lenguajes:</b> Python (Pandas, NumPy, scikit-learn), SQL (MySQL, PostgreSQL), DAX</li>
+        <li><b>Herramientas:</b> Power BI, Excel avanzado, Jupyter, GitHub</li>
+        <li><b>Machine Learning:</b> Clasificación, regresión, Random Forest, SVM, MLP, NLP básico</li>
+        <li><b>Otras:</b> Web scraping, ETL, visualización, optimización de consultas</li>
+    </ul>
 
-            <div class="project">
-                <h3>3. Product Width Prediction (SVR vs RF)</h3>
-                <p><strong>Kaggle:</strong> notebook base</p>
-                <p><strong>GitHub:</strong> repositorio</p>
-                <p><strong>Técnicas:</strong> SVR, Random Forest, escalado</p>
-                <p><strong>Descripción:</strong> Comparación de modelos; RF obtuvo R² = 0.91.</p>
-            </div>
-
-            <div class="project">
-                <h3>4. E-Commerce Order Analysis</h3>
-                <p><strong>Kaggle:</strong> dataset</p>
-                <p><strong>GitHub:</strong> repositorio</p>
-                <p><strong>Técnicas:</strong> TF-IDF, SMOTE, Random Forest</p>
-                <p><strong>Descripción:</strong> Limpieza, vectorización, balanceo y modelado para analizar comportamiento de órdenes.</p>
-            </div>
-
-            <div class="project">
-                <h3>5. Multi-Category Store Purchase Prediction</h3>
-                <p><strong>Kaggle:</strong> dataset</p>
-                <p><strong>GitHub:</strong> repositorio</p>
-                <p><strong>Técnicas:</strong> RF, ingeniería de features</p>
-                <p><strong>Descripción:</strong> Clasificación de intención de compra con accuracy ~0.96.</p>
-            </div>
-
-            <div class="project">
-                <h3>6. UK Retail Sales Analysis</h3>
-                <p><strong>Kaggle:</strong> dataset</p>
-                <p><strong>GitHub:</strong> repositorio</p>
-                <p><strong>Técnicas:</strong> SMOTE-ENN, MLP</p>
-                <p><strong>Descripción:</strong> Clasificación de transacciones mediante técnicas avanzadas de balanceo.</p>
-            </div>
-
-            <div class="project">
-                <h3>7. Predicción de Eficiencia Presupuestal (Perú 2012–2025)</h3>
-                <p><strong>Dataset:</strong> MEF Perú</p>
-                <p><strong>GitHub:</strong> repositorio</p>
-                <p><strong>Técnicas:</strong> RF, GridSearchCV, SMOTE</p>
-                <p><strong>Descripción:</strong> Modelo para clasificar eficiencia presupuestal municipal.</p>
-            </div>
-
-            <div class="project">
-                <h3>8. Housing & Income Analysis</h3>
-                <p><strong>GitHub:</strong> repositorio</p>
-                <p><strong>Técnicas:</strong> estadística avanzada, visualización</p>
-                <p><strong>Descripción:</strong> Exploración de relaciones entre ingresos, vivienda y desigualdad.</p>
-            </div>
-
-        </div>
-        <!-- END INSERT -->
-
+    <h2 id="projects-title">Proyectos Destacados</h2>
+    <div id="projects-list">
+        <p><b>1. Customer Support Satisfaction Prediction</b><br>Técnicas: SVM, Random Forest, MLP<br>Clasificación de insatisfacción del cliente con tuning (RF mejor recall).</p>
+        <p><b>2. Pakistan E-Commerce Retail Analysis</b><br>Técnicas: EDA, correlaciones, NLP<br>Análisis y modelos predictivos con texto.</p>
+        <p><b>3. Product Width Prediction (SVR vs RF)</b><br>Técnicas: SVR, RF<br>Comparación de modelos (RF R² = 0.91).</p>
+        <p><b>4. E-Commerce Order Analysis</b><br>Técnicas: TF-IDF, SMOTE, RF<br>Vectorización, balanceo y clasificación.</p>
+        <p><b>5. Multi-Category Store Purchase Prediction</b><br>Técnicas: RF<br>Accuracy ~0.96.</p>
+        <p><b>6. UK Retail Sales Analysis</b><br>Técnicas: SMOTE-ENN, MLP<br>Clasificación avanzada.</p>
+        <p><b>7. Predicción de Eficiencia Presupuestal (Perú)</b><br>Técnicas: RF, SMOTE<br>Clasificación de eficiencia municipal.</p>
+        <p><b>8. Housing & Income Analysis</b><br>Técnicas: estadística avanzada<br>Relación entre ingresos y vivienda.</p>
     </div>
 
-    <footer>
-        © 2025 David Gozar — Data Analyst
-    </footer>
+    <h2 id="services-title">Servicios</h2>
+    <ul id="services-list">
+        <li>Análisis de datos e insights accionables</li>
+        <li>Dashboards ejecutivos en Power BI</li>
+        <li>Modelos predictivos (machine learning)</li>
+        <li>Automatización de reportes en Python</li>
+        <li>Limpieza y transformación de datos</li>
+        <li>Consultoría en bases de datos y SQL</li>
+        <li>Desarrollo de indicadores KPI</li>
+    </ul>
+
+    <h2 id="achievements-title">Logros Destacados</h2>
+    <ul id="achievements-list">
+        <li>Aumento del recall de modelos en +35% mediante tuning.</li>
+        <li>Reducción del tiempo de reportes en 80%.</li>
+        <li>Optimización de consultas SQL hasta 70% más rápidas.</li>
+        <li>Dashboards adoptados por áreas clave.</li>
+    </ul>
+
+    <h2 id="contact-title">Contacto</h2>
+    <div class="contact" id="contact-list">
+        <a href="mailto:daviddanielgn@outlook.com">📧 Email</a>
+        <a href="#">🔗 LinkedIn</a>
+        <a href="#">🐙 GitHub</a>
+        <p>Perú</p>
+    </div>
+
+</div>
+
+<script>
+function setLang(lang) {
+    if (lang === 'es') {
+        document.getElementById("about-title").innerText = "Resumen Profesional";
+        document.getElementById("about-text").innerText = "Soy analista de datos con experiencia en modelado predictivo, dashboards ejecutivos y automatización de reportes.";
+        document.getElementById("skills-title").innerText = "Habilidades Técnicas";
+        document.getElementById("projects-title").innerText = "Proyectos Destacados";
+        document.getElementById("services-title").innerText = "Servicios";
+        document.getElementById("achievements-title").innerText = "Logros Destacados";
+        document.getElementById("contact-title").innerText = "Contacto";
+    } else {
+        document.getElementById("about-title").innerText = "Professional Summary";
+        document.getElementById("about-text").innerText = "Data analyst with experience in predictive modeling, executive dashboards, and report automation.";
+        document.getElementById("skills-title").innerText = "Technical Skills";
+        document.getElementById("projects-title").innerText = "Featured Projects";
+        document.getElementById("services-title").innerText = "Services";
+        document.getElementById("achievements-title").innerText = "Key Achievements";
+        document.getElementById("contact-title").innerText = "Contact";
+    }
+}
+</script>
+
 </body>
 </html>
-
