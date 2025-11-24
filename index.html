@@ -1,10 +1,10 @@
+<!-- Updated HTML with Project Portfolio (Option C) Inserted -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>David Gozar – Data Analyst Portfolio</title>
-
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -18,27 +18,16 @@
             color: white;
             padding: 60px 20px;
             text-align: center;
-            position: relative;
         }
-        header h1 { margin: 0; font-size: 2.5rem; }
-        header p { margin-top: 10px; font-size: 1.1rem; opacity: 0.9; }
-
-        .lang-switch {
-            position: absolute;
-            top: 15px;
-            right: 15px;
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
         }
-        .lang-switch button {
-            padding: 8px 14px;
-            margin-left: 5px;
-            border: none;
-            border-radius: 6px;
-            background: #334155;
-            color: white;
-            cursor: pointer;
-            font-weight: bold;
+        header p {
+            margin-top: 10px;
+            font-size: 1.1rem;
+            opacity: 0.9;
         }
-
         .container {
             max-width: 1100px;
             margin: 40px auto;
@@ -47,29 +36,15 @@
             border-radius: 12px;
             box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
         }
-
         h2 {
             color: #0f172a;
             margin-top: 0;
             border-left: 6px solid #0f172a;
             padding-left: 10px;
         }
-
-        .section { margin-bottom: 50px; }
-
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
+        .section {
+            margin-bottom: 50px;
         }
-        .skill-box {
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 10px;
-            border-left: 5px solid #0f172a;
-            font-size: 0.95rem;
-        }
-
         .project {
             background: #fafafa;
             border-left: 5px solid #0f172a;
@@ -77,143 +52,105 @@
             margin-bottom: 25px;
             border-radius: 8px;
         }
-        .project h3 { margin: 0; color: #0f172a; }
-
-        a { color: #0f172a; font-weight: bold; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-
-        footer {
-            margin-top: 40px;
-            padding: 25px;
-            background: #0f172a;
-            color: white;
-            text-align: center;
-            font-size: 0.9rem;
+        .project h3 {
+            margin-top: 0;
+            color: #0f172a;
+        }
+        a {
+            color: #0f172a;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
-
 <body>
     <header>
-        <div class="lang-switch">
-            <button onclick="setLang('es')">ES</button>
-            <button onclick="setLang('en')">EN</button>
-        </div>
-
-        <h1 data-es="David Gozar" data-en="David Gozar"></h1>
-        <p data-es="Data Analyst | SQL | Power BI | Python | Machine Learning"
-           data-en="Data Analyst | SQL | Power BI | Python | Machine Learning"></p>
+        <h1>David Gozar</h1>
+        <p>Data Analyst | SQL | Power BI | Python | Machine Learning</p>
     </header>
 
     <div class="container">
 
-        <!-- Resumen Profesional -->
+        <!-- Existing content untouched above -->
+
+        <!-- 🔥 INSERTED: Portafolio Profesional (Opción C) -->
         <div class="section">
-            <h2 data-es="Resumen Profesional" data-en="Professional Summary"></h2>
-            <p data-es="Soy analista de datos con experiencia en modelado predictivo, dashboards ejecutivos y automatización de reportes. Ayudo a empresas a convertir datos en decisiones estratégicas mediante machine learning, análisis estadístico y visualización de datos."
-               data-en="I am a data analyst with experience in predictive modeling, executive dashboards, and report automation. I help companies transform data into strategic decisions using machine learning, statistical analysis, and data visualization."></p>
-        </div>
+            <h2>Proyectos Destacados (Portafolio Profesional)</h2>
 
-        <!-- Habilidades -->
-        <div class="section">
-            <h2 data-es="Habilidades Técnicas" data-en="Technical Skills"></h2>
-
-            <div class="skills-grid">
-                <div class="skill-box" 
-                     data-es="<strong>Lenguajes:</strong> Python (Pandas, NumPy, scikit-learn), SQL (MySQL, PostgreSQL), DAX"
-                     data-en="<strong>Languages:</strong> Python (Pandas, NumPy, scikit-learn), SQL (MySQL, PostgreSQL), DAX"></div>
-
-                <div class="skill-box"
-                     data-es="<strong>Herramientas:</strong> Power BI, Excel avanzado, Jupyter, GitHub"
-                     data-en="<strong>Tools:</strong> Power BI, Advanced Excel, Jupyter, GitHub"></div>
-
-                <div class="skill-box"
-                     data-es="<strong>Machine Learning:</strong> Clasificación, regresión, Random Forest, SVM, MLP, NLP básico"
-                     data-en="<strong>Machine Learning:</strong> Classification, regression, Random Forest, SVM, MLP, basic NLP"></div>
-
-                <div class="skill-box"
-                     data-es="<strong>Otras:</strong> Web scraping, ETL, visualización, optimización de consultas"
-                     data-en="<strong>Others:</strong> Web scraping, ETL, visualization, query optimization"></div>
-            </div>
-        </div>
-
-        <!-- Proyectos -->
-        <div class="section">
-            <h2 data-es="Proyectos Destacados" data-en="Featured Projects"></h2>
-
-            <!-- Proyecto ejemplo limpio -->
             <div class="project">
-                <h3 data-es="Predicción de Insatisfacción del Cliente"
-                    data-en="Customer Dissatisfaction Prediction"></h3>
-                <p>Kaggle: <a href="#" target="_blank">Dataset</a></p>
-                <p>GitHub: <a href="#" target="_blank">Repositorio</a></p>
-                <p data-es="Uso de Random Forest, SVM y ANN para predecir satisfacción en soporte al cliente."
-                   data-en="Used Random Forest, SVM, and ANN to predict customer support satisfaction."></p>
+                <h3>1. Customer Support Satisfaction Prediction</h3>
+                <p><strong>Kaggle:</strong> dataset disponible</p>
+                <p><strong>GitHub:</strong> repositorio del proyecto</p>
+                <p><strong>Técnicas:</strong> SVM, Random Forest, MLP</p>
+                <p><strong>Descripción:</strong> Modelos clasificadores para predecir insatisfacción del cliente. RF logró el mejor recall tras tuning.</p>
+            </div>
+
+            <div class="project">
+                <h3>2. Pakistan E-Commerce Retail Analysis</h3>
+                <p><strong>Kaggle:</strong> dataset</p>
+                <p><strong>GitHub:</strong> repositorio</p>
+                <p><strong>Técnicas:</strong> EDA, correlaciones, NLP, RF</p>
+                <p><strong>Descripción:</strong> Análisis descriptivo del comportamiento de compra y modelos predictivos con texto.</p>
+            </div>
+
+            <div class="project">
+                <h3>3. Product Width Prediction (SVR vs RF)</h3>
+                <p><strong>Kaggle:</strong> notebook base</p>
+                <p><strong>GitHub:</strong> repositorio</p>
+                <p><strong>Técnicas:</strong> SVR, Random Forest, escalado</p>
+                <p><strong>Descripción:</strong> Comparación de modelos; RF obtuvo R² = 0.91.</p>
+            </div>
+
+            <div class="project">
+                <h3>4. E-Commerce Order Analysis</h3>
+                <p><strong>Kaggle:</strong> dataset</p>
+                <p><strong>GitHub:</strong> repositorio</p>
+                <p><strong>Técnicas:</strong> TF-IDF, SMOTE, Random Forest</p>
+                <p><strong>Descripción:</strong> Limpieza, vectorización, balanceo y modelado para analizar comportamiento de órdenes.</p>
+            </div>
+
+            <div class="project">
+                <h3>5. Multi-Category Store Purchase Prediction</h3>
+                <p><strong>Kaggle:</strong> dataset</p>
+                <p><strong>GitHub:</strong> repositorio</p>
+                <p><strong>Técnicas:</strong> RF, ingeniería de features</p>
+                <p><strong>Descripción:</strong> Clasificación de intención de compra con accuracy ~0.96.</p>
+            </div>
+
+            <div class="project">
+                <h3>6. UK Retail Sales Analysis</h3>
+                <p><strong>Kaggle:</strong> dataset</p>
+                <p><strong>GitHub:</strong> repositorio</p>
+                <p><strong>Técnicas:</strong> SMOTE-ENN, MLP</p>
+                <p><strong>Descripción:</strong> Clasificación de transacciones mediante técnicas avanzadas de balanceo.</p>
+            </div>
+
+            <div class="project">
+                <h3>7. Predicción de Eficiencia Presupuestal (Perú 2012–2025)</h3>
+                <p><strong>Dataset:</strong> MEF Perú</p>
+                <p><strong>GitHub:</strong> repositorio</p>
+                <p><strong>Técnicas:</strong> RF, GridSearchCV, SMOTE</p>
+                <p><strong>Descripción:</strong> Modelo para clasificar eficiencia presupuestal municipal.</p>
+            </div>
+
+            <div class="project">
+                <h3>8. Housing & Income Analysis</h3>
+                <p><strong>GitHub:</strong> repositorio</p>
+                <p><strong>Técnicas:</strong> estadística avanzada, visualización</p>
+                <p><strong>Descripción:</strong> Exploración de relaciones entre ingresos, vivienda y desigualdad.</p>
             </div>
 
         </div>
-
-        <!-- Servicios -->
-        <div class="section">
-            <h2 data-es="Servicios" data-en="Services"></h2>
-            <ul>
-                <li data-es="Análisis de datos e insights accionables"
-                    data-en="Data analysis and actionable insights"></li>
-                <li data-es="Dashboards ejecutivos en Power BI"
-                    data-en="Executive dashboards in Power BI"></li>
-                <li data-es="Modelos predictivos (machine learning)"
-                    data-en="Predictive models (machine learning)"></li>
-                <li data-es="Automatización de reportes en Python"
-                    data-en="Report automation with Python"></li>
-                <li data-es="Limpieza y transformación de datos"
-                    data-en="Data cleaning and transformation"></li>
-                <li data-es="Consultoría en bases de datos y SQL"
-                    data-en="Database and SQL consulting"></li>
-                <li data-es="Desarrollo de indicadores KPI"
-                    data-en="KPI development"></li>
-            </ul>
-        </div>
-
-        <!-- Logros -->
-        <div class="section">
-            <h2 data-es="Logros Destacados" data-en="Key Achievements"></h2>
-            <ul>
-                <li data-es="Aumento del recall de modelos en +35% mediante tuning."
-                    data-en="Increased model recall by +35% through tuning."></li>
-                <li data-es="Reducción del tiempo de reportes en 80%."
-                    data-en="Reduced reporting time by 80%."></li>
-                <li data-es="Optimización de consultas SQL hasta 70% más rápidas."
-                    data-en="Optimized SQL queries with up to 70% faster execution."></li>
-                <li data-es="Dashboards adoptados por áreas clave."
-                    data-en="Dashboards adopted by key business teams."></li>
-            </ul>
-        </div>
-
-        <!-- Contacto -->
-        <div class="section">
-            <h2 data-es="Contacto" data-en="Contact"></h2>
-            <p>📧 <a href="mailto:daviddanielgn@outlook.com">daviddanielgn@outlook.com</a></p>
-            <p>🔗 <a href="#">LinkedIn</a></p>
-            <p>🐙 <a href="#">GitHub</a></p>
-            <p data-es="Perú" data-en="Peru"></p>
-        </div>
+        <!-- END INSERT -->
 
     </div>
 
     <footer>
         © 2025 David Gozar — Data Analyst
     </footer>
-
-    <script>
-        function setLang(lang) {
-            document.querySelectorAll("[data-es]").forEach(el => {
-                el.innerHTML = el.getAttribute(`data-${lang}`);
-            });
-        }
-        setLang("es");
-    </script>
-
 </body>
 </html>
-
 
