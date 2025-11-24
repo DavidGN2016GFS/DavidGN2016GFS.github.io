@@ -6,6 +6,30 @@
 <title>David Gozar – Data Analyst Portfolio</title>
 
 <style>
+
+    /* Hacer clickeables las tarjetas sin cambiar diseño */
+    .card {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    cursor: pointer;
+
+    /* diseño */
+    background: #fff;
+    padding: 20px;
+    border-radius: 14px;
+
+    /* sombras y animación */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+    /* ----- BODY ----- */
     body {
         font-family: Arial, sans-serif;
         margin: 0;
@@ -22,9 +46,17 @@
         text-align: center;
     }
 
-    header h1 { margin: 0; font-size: 2.8rem; }
-    header p { font-size: 1.1rem; opacity: 0.9; }
+    header h1 {
+        margin: 0;
+        font-size: 2.8rem;
+    }
 
+    header p {
+        font-size: 1.1rem;
+        opacity: 0.9;
+    }
+
+    /* Botón de idioma */
     .lang-switch button {
         margin-top: 15px;
         padding: 9px 16px;
@@ -34,6 +66,8 @@
         cursor: pointer;
         font-weight: bold;
     }
+    
+
 
     /* ----- SECCIONES ----- */
     section {
@@ -195,51 +229,107 @@ function toggleLang() {
 
     <div class="projects-grid">
 
-        <div class="card">
+        <!-- 1. CUSTOMER SUPPORT -->
+        <a class="card" target="_blank" 
+           href="https://github.com/DavidGN2016GFS/ecommerce-consumer-behavior/releases/tag/v1.0.0">
             <h3>Customer Support Satisfaction</h3>
-            <p class="es">Se evaluaron modelos SVM, Random Forest y MLP para predecir insatisfacción del cliente usando datos estructurados y comentarios. El análisis mostró fuerte desbalance y la necesidad de ajustar hiperparámetros y aumentar datos.</p>
-            <p class="en">SVM, Random Forest and MLP were evaluated to predict customer dissatisfaction using structured data and text. Strong imbalance was found, with need for tuning and more data.</p>
-        </div>
+            <p class="es">
+                Se evaluaron modelos SVM, Random Forest y MLP para predecir insatisfacción del cliente usando datos
+                estructurados y comentarios. El análisis mostró fuerte desbalance y la necesidad de ajustar
+                hiperparámetros y aumentar datos.
+            </p>
+            <p class="en">
+                SVM, Random Forest and MLP were evaluated to predict customer dissatisfaction using structured data and
+                text. Strong imbalance was found, with need for tuning and more data.
+            </p>
+        </a>
 
-        <div class="card">
+        <!-- 2. PAKISTAN ECOMMERCE -->
+        <a class="card" target="_blank"
+           href="https://github.com/DavidGN2016GFS/pakistan-ecommerce-dataset/releases/tag/v1.0.0">
             <h3>Pakistan E-Commerce Retail</h3>
-            <p class="es">Incluyó EDA, NLP, correlaciones y modelos para predecir insatisfacción. Las ventas variaron por mes y categoría, pero los modelos tuvieron dificultad por el desbalance. RF destacó por su recall general.</p>
-            <p class="en">Project included EDA, NLP, correlations and models for dissatisfaction. Sales varied by month/category but imbalance affected models; RF achieved the best overall recall.</p>
-        </div>
+            <p class="es">
+                Incluyó EDA, NLP, correlaciones y modelos para predecir insatisfacción. Las ventas variaron por mes y
+                categoría, pero los modelos tuvieron dificultad por el desbalance. RF destacó por su recall general.
+            </p>
+            <p class="en">
+                Project included EDA, NLP, correlations and models for dissatisfaction. Sales varied by month/category
+                but imbalance affected models; RF achieved the best overall recall.
+            </p>
+        </a>
 
-        <div class="card">
+        <!-- 3. PRODUCT WIDTH (LIGHTGBM VS RF EN TU DESCRIPCIÓN ORIGINAL) -->
+        <a class="card" target="_blank"
+           href="https://github.com/DavidGN2016GFS/fitness-tracker-analysis">
             <h3>Product Width Prediction</h3>
-            <p class="es">Comparación entre SVR y Random Forest para predecir el ancho físico de productos. RF logró R² = 0.91 con MAE ≈ 1 cm, destacando por capturar relaciones no lineales.</p>
-            <p class="en">Comparison between SVR and Random Forest to predict product width. RF reached R² = 0.91 with ~1 cm MAE thanks to non‑linear modeling capacity.</p>
-        </div>
+            <p class="es">
+                Comparación entre SVR y Random Forest para predecir el ancho físico de productos. RF logró R² = 0.91
+                con MAE ≈ 1 cm, destacando por capturar relaciones no lineales.
+            </p>
+            <p class="en">
+                Comparison between SVR and Random Forest to predict product width. RF reached R² = 0.91 with ~1 cm MAE
+                thanks to non-linear modeling capacity.
+            </p>
+        </a>
 
-        <div class="card">
+        <!-- 4. ECOMMERCE ORDERS -->
+        <a class="card" target="_blank"
+           href="https://github.com/DavidGN2016GFS/ecommerce-order-analysis">
             <h3>E-Commerce Orders (TF-IDF + SMOTE)</h3>
-            <p class="es">Procesamiento, TF‑IDF, SMOTE y tres modelos. RF obtuvo la mayor precisión y F1‑score para predecir probabilidad de compra, seleccionándose como modelo final.</p>
-            <p class="en">Processing, TF‑IDF, SMOTE and three models. RF achieved the best accuracy and F1‑score for purchase prediction and was selected as final model.</p>
-        </div>
+            <p class="es">
+                Procesamiento, TF-IDF, SMOTE y tres modelos. RF obtuvo la mayor precisión y F1-score para predecir
+                probabilidad de compra, seleccionándose como modelo final.
+            </p>
+            <p class="en">
+                Processing, TF-IDF, SMOTE and three models. RF achieved the best accuracy and F1-score for purchase
+                prediction and was selected as final model.
+            </p>
+        </a>
 
-        <div class="card">
+        <!-- 5. HIGH VALUE PURCHASES -->
+        <a class="card" target="_blank"
+           href="https://github.com/DavidGN2016GFS/ecommerce-width-prediction/releases/tag/v1.0.0">
             <h3>E-Commerce High-Value Purchases</h3>
-            <p class="es">Identificación de transacciones de alto valor mediante RF y MLP. Variables clave: TotalAmount, frecuencia de compra y mes. Se recomienda mejorar hiperparámetros y probar modelos avanzados.</p>
-            <p class="en">High‑value purchase identification using RF and MLP. Key variables: TotalAmount, customer frequency, month. Future work includes tuning and advanced models.</p>
-        </div>
+            <p class="es">
+                Identificación de transacciones de alto valor mediante RF y MLP. Variables clave: TotalAmount,
+                frecuencia de compra y mes. Se recomienda mejorar hiperparámetros y probar modelos avanzados.
+            </p>
+            <p class="en">
+                High-value purchase identification using RF and MLP. Key variables: TotalAmount, customer frequency,
+                month. Future work includes tuning and advanced models.
+            </p>
+        </a>
 
-        <div class="card">
+        <!-- 6. UK RETAIL SALES -->
+        <a class="card" target="_blank"
+           href="https://github.com/DavidGN2016GFS/ecommerce-purchase-prediction">
             <h3>UK Retail Sales Analysis</h3>
-            <p class="es">Patrones de ventas mediante EDA y modelos balanceados con SMOTEENN. RF y MLP mostraron mayor estabilidad. Se sugiere incorporar nuevas variables y AutoML.</p>
-            <p class="en">Sales patterns via EDA and SMOTEENN‑balanced models. RF and MLP performed best. Proposed improvements: more features and AutoML.</p>
-        </div>
+            <p class="es">
+                Patrones de ventas mediante EDA y modelos balanceados con SMOTEENN. RF y MLP mostraron mayor estabilidad.
+                Se sugiere incorporar nuevas variables y AutoML.
+            </p>
+            <p class="en">
+                Sales patterns via EDA and SMOTEENN-balanced models. RF and MLP performed best. Proposed improvements:
+                more features and AutoML.
+            </p>
+        </a>
 
-        <div class="card">
+        <!-- 7. BUDGET EXECUTION CLASSIFIER -->
+        <a class="card" target="_blank"
+           href="https://github.com/DavidGN2016GFS/analisis_ventas_online_retail">
             <h3>Budget Execution Classifier (Perú 2012–2025)</h3>
-            <p class="es">Random Forest optimizado con GridSearchCV y SMOTE para clasificar eficiencia del gasto público. Incluye predicciones 2025 con probabilidades para apoyar gestión preventiva.</p>
-            <p class="en">Optimized Random Forest with GridSearchCV and SMOTE to classify public spending efficiency. Includes 2025 predictions with probabilities for early decision‑making.</p>
-        </div>
+            <p class="es">
+                Random Forest optimizado con GridSearchCV y SMOTE para clasificar eficiencia del gasto público. Incluye
+                predicciones 2025 con probabilidades para apoyar gestión preventiva.
+            </p>
+            <p class="en">
+                Optimized Random Forest with GridSearchCV and SMOTE to classify public spending efficiency. Includes
+                2025 predictions with probabilities for early decision-making.
+            </p>
+        </a>
 
     </div>
 </section>
-
 
 <!-- CONTACTO -->
 <section>
