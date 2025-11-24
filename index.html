@@ -18,6 +18,7 @@
             color: white;
             padding: 60px 20px;
             text-align: center;
+            position: relative;
         }
         header h1 { margin: 0; font-size: 2.5rem; }
         header p { margin-top: 10px; font-size: 1.1rem; opacity: 0.9; }
@@ -37,7 +38,7 @@
             cursor: pointer;
             font-weight: bold;
         }
-        
+
         .container {
             max-width: 1100px;
             margin: 40px auto;
@@ -99,7 +100,7 @@
             <button onclick="setLang('en')">EN</button>
         </div>
 
-        <h1 data-es="David Gozar" data-en="David Gozar">David Gozar</h1>
+        <h1 data-es="David Gozar" data-en="David Gozar"></h1>
         <p data-es="Data Analyst | SQL | Power BI | Python | Machine Learning"
            data-en="Data Analyst | SQL | Power BI | Python | Machine Learning"></p>
     </header>
@@ -136,6 +137,22 @@
             </div>
         </div>
 
+        <!-- Proyectos -->
+        <div class="section">
+            <h2 data-es="Proyectos Destacados" data-en="Featured Projects"></h2>
+
+            <!-- Proyecto ejemplo limpio -->
+            <div class="project">
+                <h3 data-es="Predicción de Insatisfacción del Cliente"
+                    data-en="Customer Dissatisfaction Prediction"></h3>
+                <p>Kaggle: <a href="#" target="_blank">Dataset</a></p>
+                <p>GitHub: <a href="#" target="_blank">Repositorio</a></p>
+                <p data-es="Uso de Random Forest, SVM y ANN para predecir satisfacción en soporte al cliente."
+                   data-en="Used Random Forest, SVM, and ANN to predict customer support satisfaction."></p>
+            </div>
+
+        </div>
+
         <!-- Servicios -->
         <div class="section">
             <h2 data-es="Servicios" data-en="Services"></h2>
@@ -161,31 +178,15 @@
         <div class="section">
             <h2 data-es="Logros Destacados" data-en="Key Achievements"></h2>
             <ul>
-                <li data-es="Aumento del recall de modelos en +35% mediante tuning y técnicas de balanceo."
-                    data-en="Improved model recall by +35% using tuning and balancing techniques."></li>
-                <li data-es="Reducción del tiempo de reportes en 80% con automatización."
-                    data-en="Reduced reporting time by 80% through automation."></li>
-                <li data-es="Optimización de consultas SQL con mejora de hasta 70% en tiempos."
-                    data-en="Optimized SQL queries achieving up to 70% faster execution times."></li>
-                <li data-es="Dashboards utilizados por equipos de ventas, finanzas y operaciones."
-                    data-en="Dashboards used by sales, finance, and operations teams."></li>
+                <li data-es="Aumento del recall de modelos en +35% mediante tuning."
+                    data-en="Increased model recall by +35% through tuning."></li>
+                <li data-es="Reducción del tiempo de reportes en 80%."
+                    data-en="Reduced reporting time by 80%."></li>
+                <li data-es="Optimización de consultas SQL hasta 70% más rápidas."
+                    data-en="Optimized SQL queries with up to 70% faster execution."></li>
+                <li data-es="Dashboards adoptados por áreas clave."
+                    data-en="Dashboards adopted by key business teams."></li>
             </ul>
-        </div>
-
-        <!-- Proyectos -->
-        <div class="section">
-            <h2 data-es="Proyectos Destacados" data-en="Featured Projects"></h2>
-
-            <div class="project">
-                <h3 data-es="Customer Support Satisfaction Prediction"
-                    data-en="Customer Support Satisfaction Prediction"></h3>
-                <p>Kaggle: <a href="">Dataset</a></p>
-                <p>GitHub: <a href="">Repositorio</a></p>
-                <p data-es="Modelos SVM, Random Forest y ANN para predecir insatisfacción del cliente."
-                   data-en="SVM, Random Forest, and ANN models to predict customer dissatisfaction."></p>
-            </div>
-
-            <!-- Puedes repetir el formato para tus 8 proyectos -->
         </div>
 
         <!-- Contacto -->
