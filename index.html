@@ -188,7 +188,7 @@ function toggleLang() {
     </ul>
 </section>
 
-<!-- PROYECTOS -->
+<!-- PROYECTOS (OPCIÓN B - descripciones medianas) -->
 <section>
     <h2 class="es">Proyectos Destacados</h2>
     <h2 class="en">Featured Projects</h2>
@@ -197,29 +197,49 @@ function toggleLang() {
 
         <div class="card">
             <h3>Customer Support Satisfaction</h3>
-            <p class="es">Modelos SVM, RF, MLP para predecir insatisfacción.</p>
-            <p class="en">SVM, RF, MLP models for customer dissatisfaction.</p>
+            <p class="es">Se evaluaron modelos SVM, Random Forest y MLP para predecir insatisfacción del cliente usando datos estructurados y comentarios. El análisis mostró fuerte desbalance y la necesidad de ajustar hiperparámetros y aumentar datos.</p>
+            <p class="en">SVM, Random Forest and MLP were evaluated to predict customer dissatisfaction using structured data and text. Strong imbalance was found, with need for tuning and more data.</p>
         </div>
 
         <div class="card">
             <h3>Pakistan E-Commerce Retail</h3>
-            <p class="es">EDA + NLP + correlaciones + modelos RF.</p>
-            <p class="en">EDA + NLP + correlations + RF models.</p>
+            <p class="es">Incluyó EDA, NLP, correlaciones y modelos para predecir insatisfacción. Las ventas variaron por mes y categoría, pero los modelos tuvieron dificultad por el desbalance. RF destacó por su recall general.</p>
+            <p class="en">Project included EDA, NLP, correlations and models for dissatisfaction. Sales varied by month/category but imbalance affected models; RF achieved the best overall recall.</p>
         </div>
 
         <div class="card">
             <h3>Product Width Prediction</h3>
-            <p class="es">Comparación SVR vs RF (R² = 0.91).</p>
-            <p class="en">SVR vs RF comparison (R² = 0.91).</p>
+            <p class="es">Comparación entre SVR y Random Forest para predecir el ancho físico de productos. RF logró R² = 0.91 con MAE ≈ 1 cm, destacando por capturar relaciones no lineales.</p>
+            <p class="en">Comparison between SVR and Random Forest to predict product width. RF reached R² = 0.91 with ~1 cm MAE thanks to non‑linear modeling capacity.</p>
         </div>
 
         <div class="card">
             <h3>E-Commerce Orders (TF-IDF + SMOTE)</h3>
-            <p class="es">Análisis de órdenes con texto.</p>
-            <p class="en">Order classification using text vectorization.</p>
+            <p class="es">Procesamiento, TF‑IDF, SMOTE y tres modelos. RF obtuvo la mayor precisión y F1‑score para predecir probabilidad de compra, seleccionándose como modelo final.</p>
+            <p class="en">Processing, TF‑IDF, SMOTE and three models. RF achieved the best accuracy and F1‑score for purchase prediction and was selected as final model.</p>
         </div>
+
+        <div class="card">
+            <h3>E-Commerce High-Value Purchases</h3>
+            <p class="es">Identificación de transacciones de alto valor mediante RF y MLP. Variables clave: TotalAmount, frecuencia de compra y mes. Se recomienda mejorar hiperparámetros y probar modelos avanzados.</p>
+            <p class="en">High‑value purchase identification using RF and MLP. Key variables: TotalAmount, customer frequency, month. Future work includes tuning and advanced models.</p>
+        </div>
+
+        <div class="card">
+            <h3>UK Retail Sales Analysis</h3>
+            <p class="es">Patrones de ventas mediante EDA y modelos balanceados con SMOTEENN. RF y MLP mostraron mayor estabilidad. Se sugiere incorporar nuevas variables y AutoML.</p>
+            <p class="en">Sales patterns via EDA and SMOTEENN‑balanced models. RF and MLP performed best. Proposed improvements: more features and AutoML.</p>
+        </div>
+
+        <div class="card">
+            <h3>Budget Execution Classifier (Perú 2012–2025)</h3>
+            <p class="es">Random Forest optimizado con GridSearchCV y SMOTE para clasificar eficiencia del gasto público. Incluye predicciones 2025 con probabilidades para apoyar gestión preventiva.</p>
+            <p class="en">Optimized Random Forest with GridSearchCV and SMOTE to classify public spending efficiency. Includes 2025 predictions with probabilities for early decision‑making.</p>
+        </div>
+
     </div>
 </section>
+
 
 <!-- CONTACTO -->
 <section>
