@@ -3,230 +3,237 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Portafolio – David Gozar</title>
+<title>David Gozar – Data Analyst Portfolio</title>
 
 <style>
     body {
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
-        background: #f2f2f2;
+        background: #f4f4f4;
+        color: #222;
     }
 
+    /* ----- HEADER / HERO ----- */
     header {
-        background: #1a237e;
+        background: #1f2937;
         color: white;
-        padding: 20px;
+        padding: 45px 20px;
         text-align: center;
     }
 
-    .lang-btn {
-        margin-top: 10px;
-        background: #ffeb3b;
+    header h1 { margin: 0; font-size: 2.8rem; }
+    header p { font-size: 1.1rem; opacity: 0.9; }
+
+    .lang-switch button {
+        margin-top: 15px;
+        padding: 9px 16px;
+        background: #fbbf24;
         border: none;
-        padding: 10px 14px;
-        cursor: pointer;
         border-radius: 6px;
+        cursor: pointer;
         font-weight: bold;
     }
 
-    .container {
-        max-width: 1050px;
-        margin: auto;
-        padding: 20px;
+    /* ----- SECCIONES ----- */
+    section {
+        max-width: 1000px;
+        margin: 40px auto;
+        background: white;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+        border-left: 5px solid #fbbf24;
+        padding-left: 10px;
+        color: #111;
+    }
+
+    ul { line-height: 1.7; }
+
+    /* ----- TARJETAS DE PROYECTOS ----- */
+    .projects-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-        gap: 22px;
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+        gap: 20px;
+        margin-top: 20px;
     }
 
     .card {
-        background: white;
+        background: #fff;
         padding: 20px;
         border-radius: 14px;
         box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-        transition: 0.3s;
+        transition: 0.35s;
         cursor: pointer;
     }
-
     .card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+        transform: translateY(-6px);
+        box-shadow: 0 6px 14px rgba(0,0,0,0.15);
     }
-
     .card h3 {
         margin-top: 0;
         color: #1a237e;
     }
 
-    .btn-box {
-        margin-top: 12px;
-        display: flex;
-        gap: 10px;
-    }
-
-    .btn {
-        background: #1a237e;
-        color: white;
-        padding: 8px 13px;
-        border-radius: 6px;
-        text-decoration: none;
-        font-size: 14px;
-    }
-
-    .btn:hover {
-        background: #303f9f;
-    }
-
-    /* TEXTOS INGLES OCULTOS AL INICIO */
+    /* English hidden at start */
     .en { display: none; }
+
+    /* CONTACTO */
+    .contact a {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #1d4ed8;
+        text-decoration: none;
+    }
 </style>
 
 <script>
-    function toggleLanguage() {
-        const es = document.querySelectorAll('.es');
-        const en = document.querySelectorAll('.en');
-        const btn = document.getElementById("langButton");
+function toggleLang() {
+    const es = document.querySelectorAll('.es');
+    const en = document.querySelectorAll('.en');
+    const btn = document.getElementById("langBtn");
 
-        es.forEach(e => e.style.display = (e.style.display === "none") ? "block" : "none");
-        en.forEach(e => e.style.display = (e.style.display === "none") ? "block" : "none");
+    const showEN = btn.textContent === "ENGLISH";
 
-        btn.textContent = btn.textContent === "ENGLISH" ? "ESPAÑOL" : "ENGLISH";
-    }
+    es.forEach(e => e.style.display = showEN ? "none" : "block");
+    en.forEach(e => e.style.display = showEN ? "block" : "none");
+
+    btn.textContent = showEN ? "ESPAÑOL" : "ENGLISH";
+}
 </script>
-
 </head>
+
 <body>
 
+<!-- HERO -->
 <header>
-    <h1>David Gozar – Portafolio de Proyectos</h1>
-    <button id="langButton" class="lang-btn" onclick="toggleLanguage()">ENGLISH</button>
+    <h1>David Gozar</h1>
+    <p>Data Analyst | SQL | Power BI | Python | Machine Learning</p>
+
+    <button id="langBtn" class="lang-switch" onclick="toggleLang()">ENGLISH</button>
 </header>
 
-<div class="container">
+<!-- RESUMEN -->
+<section>
+    <h2 class="es">Resumen Profesional</h2>
+    <h2 class="en">Professional Summary</h2>
 
-    <!-- TARJETA 1 -->
-    <div class="card">
-        <h3>Customer Support Satisfaction</h3>
-        <p class="es">
-            Modelos SVM, RF y MLP para predecir insatisfacción usando datos estructurados y texto.
-            RF obtuvo mayor recall; análisis reveló fuerte desbalance y predominancia de comentarios neutros.
-        </p>
-        <p class="en">
-            SVM, RF and MLP models predicting customer dissatisfaction using structured data and text.
-            RF achieved the highest recall; strong imbalance and neutral comments dominated the dataset.
-        </p>
-        <div class="btn-box">
-            <a class="btn" href="https://github.com/DavidGN2016GFS/ecommerce-consumer-behavior/releases/tag/v1.0.0">GitHub</a>
-            <a class="btn" href="https://www.kaggle.com/datasets/ddosad/ecommerce-customer-service-satisfaction">Kaggle</a>
+    <p class="es">
+        Soy analista de datos con experiencia en modelado predictivo,
+        dashboards ejecutivos y automatización de reportes.
+    </p>
+    <p class="en">
+        Data analyst with experience in predictive modeling,
+        executive dashboards and report automation.
+    </p>
+</section>
+
+<!-- SKILLS -->
+<section>
+    <h2 class="es">Habilidades Técnicas</h2>
+    <h2 class="en">Technical Skills</h2>
+
+    <ul class="es">
+        <li><b>Lenguajes:</b> Python, SQL, DAX</li>
+        <li><b>Herramientas:</b> Power BI, Excel, GitHub</li>
+        <li><b>Machine Learning:</b> RF, SVM, MLP</li>
+        <li><b>Otras:</b> Web scraping, ETL</li>
+    </ul>
+
+    <ul class="en">
+        <li><b>Languages:</b> Python, SQL, DAX</li>
+        <li><b>Tools:</b> Power BI, Excel, GitHub</li>
+        <li><b>Machine Learning:</b> RF, SVM, MLP</li>
+        <li><b>Others:</b> Web scraping, ETL</li>
+    </ul>
+</section>
+
+<!-- SERVICIOS -->
+<section>
+    <h2 class="es">Servicios</h2>
+    <h2 class="en">Services</h2>
+
+    <ul class="es">
+        <li>Dashboards en Power BI</li>
+        <li>Machine Learning</li>
+        <li>Automatización en Python</li>
+        <li>Consultoría SQL</li>
+    </ul>
+
+    <ul class="en">
+        <li>Power BI dashboards</li>
+        <li>Machine Learning models</li>
+        <li>Python automation</li>
+        <li>SQL consulting</li>
+    </ul>
+</section>
+
+<!-- LOGROS -->
+<section>
+    <h2 class="es">Logros Destacados</h2>
+    <h2 class="en">Achievements</h2>
+
+    <ul class="es">
+        <li>+35% recall en modelos ML</li>
+        <li>80% reducción en tiempo de reportes</li>
+    </ul>
+
+    <ul class="en">
+        <li>+35% recall improvement on ML models</li>
+        <li>80% reduction in report time</li>
+    </ul>
+</section>
+
+<!-- PROYECTOS -->
+<section>
+    <h2 class="es">Proyectos Destacados</h2>
+    <h2 class="en">Featured Projects</h2>
+
+    <div class="projects-grid">
+
+        <div class="card">
+            <h3>Customer Support Satisfaction</h3>
+            <p class="es">Modelos SVM, RF, MLP para predecir insatisfacción.</p>
+            <p class="en">SVM, RF, MLP models for customer dissatisfaction.</p>
+        </div>
+
+        <div class="card">
+            <h3>Pakistan E-Commerce Retail</h3>
+            <p class="es">EDA + NLP + correlaciones + modelos RF.</p>
+            <p class="en">EDA + NLP + correlations + RF models.</p>
+        </div>
+
+        <div class="card">
+            <h3>Product Width Prediction</h3>
+            <p class="es">Comparación SVR vs RF (R² = 0.91).</p>
+            <p class="en">SVR vs RF comparison (R² = 0.91).</p>
+        </div>
+
+        <div class="card">
+            <h3>E-Commerce Orders (TF-IDF + SMOTE)</h3>
+            <p class="es">Análisis de órdenes con texto.</p>
+            <p class="en">Order classification using text vectorization.</p>
         </div>
     </div>
+</section>
 
-    <!-- TARJETA 2 -->
-    <div class="card">
-        <h3>Pakistan E-Commerce Retail Analysis</h3>
-        <p class="es">
-            EDA, correlaciones, NLP y modelos. RF obtuvo el mejor recall aunque el desbalance afectó a todos los modelos.
-        </p>
-        <p class="en">
-            EDA, correlations, NLP and models. RF achieved the best recall although class imbalance affected all models.
-        </p>
-        <div class="btn-box">
-            <a class="btn" href="https://github.com/DavidGN2016GFS/pakistan-ecommerce-dataset/releases/tag/v1.0.0">GitHub</a>
-            <a class="btn" href="https://www.kaggle.com/datasets/zusmani/pakistans-largest-ecommerce-dataset">Kaggle</a>
-        </div>
+<!-- CONTACTO -->
+<section>
+    <h2 class="es">Contacto</h2>
+    <h2 class="en">Contact</h2>
+
+    <div class="contact">
+        <a href="mailto:daviddanielgn@outlook.com">📧 Email</a>
+        <a href="#">🔗 LinkedIn</a>
+        <a href="#">🐙 GitHub</a>
+        <p>Perú</p>
     </div>
+</section>
 
-    <!-- TARJETA 3 -->
-    <div class="card">
-        <h3>Product Width Prediction (SVR vs RF)</h3>
-        <p class="es">
-            RF alcanzó R²≈0.91 gracias a relaciones no lineales. Variables clave: largo, peso, altura y precio.
-        </p>
-        <p class="en">
-            RF reached R²≈0.91 due to nonlinear modeling. Key variables: length, weight, height and price.
-        </p>
-        <div class="btn-box">
-            <a class="btn" href="https://github.com/DavidGN2016GFS/fitness-tracker-analysis">GitHub</a>
-            <a class="btn" href="https://www.kaggle.com/code/erikbruin/google-analytics-eda-lightgbm-screenshots/input">Kaggle</a>
-        </div>
-    </div>
-
-    <!-- TARJETA 4 -->
-    <div class="card">
-        <h3>E-Commerce Order Analysis</h3>
-        <p class="es">
-            TF-IDF + SMOTE + RF como modelo final para predecir probabilidad de compra con alta precisión.
-        </p>
-        <p class="en">
-            TF-IDF + SMOTE + RF selected as final model to predict purchase probability with strong performance.
-        </p>
-        <div class="btn-box">
-            <a class="btn" href="https://github.com/DavidGN2016GFS/ecommerce-order-analysis">GitHub</a>
-            <a class="btn" href="https://www.kaggle.com/datasets/bytadit/ecommerce-order-dataset">Kaggle</a>
-        </div>
-    </div>
-
-    <!-- TARJETA 5 -->
-    <div class="card">
-        <h3>Multi-Category Store Purchase Prediction</h3>
-        <p class="es">
-            RF logró Accuracy y Recall ≈0.96 tras SMOTE. Modelo robusto y listo para producción.
-        </p>
-        <p class="en">
-            RF achieved Accuracy and Recall ≈0.96 after SMOTE. Robust model ready for deployment.
-        </p>
-        <div class="btn-box">
-            <a class="btn" href="https://github.com/DavidGN2016GFS/ecommerce-width-prediction/releases/tag/v1.0.0">GitHub</a>
-            <a class="btn" href="https://www.kaggle.com/datasets/mkechinov/ecommerce-behavior-data-from-multi-category-store/data">Kaggle</a>
-        </div>
-    </div>
-
-    <!-- TARJETA 6 -->
-    <div class="card">
-        <h3>Transactional E-Commerce Prediction</h3>
-        <p class="es">
-            RF y MLP identifican compras de alto valor; variables clave: monto, frecuencia y cantidad de ítems.
-        </p>
-        <p class="en">
-            RF and MLP identify high-value purchases; key variables: amount, frequency and items per invoice.
-        </p>
-        <div class="btn-box">
-            <a class="btn" href="https://github.com/DavidGN2016GFS/ecommerce-purchase-prediction">GitHub</a>
-            <a class="btn" href="https://www.kaggle.com/datasets/bytadit/transactional-ecommerce">Kaggle</a>
-        </div>
-    </div>
-
-    <!-- TARJETA 7 -->
-    <div class="card">
-        <h3>UK Retail Sales Analysis</h3>
-        <p class="es">
-            RF y MLP sobresalieron con SMOTEENN. Variables clave: TotalAmount, frecuencia y tickets por compra.
-        </p>
-        <p class="en">
-            RF and MLP performed best with SMOTEENN. Key variables: TotalAmount, frequency and invoice items.
-        </p>
-        <div class="btn-box">
-            <a class="btn" href="https://github.com/DavidGN2016GFS/analisis_ventas_online_retail">GitHub</a>
-            <a class="btn" href="https://www.kaggle.com/datasets/kuldeeppatel08/ecommerce-uk-retailer">Kaggle</a>
-        </div>
-    </div>
-
-    <!-- TARJETA 8 -->
-    <div class="card">
-        <h3>Gasto Público Perú 2012–2025</h3>
-        <p class="es">
-            RF optimizado con GridSearchCV. SMOTE equilibró categorías. Predice nivel de eficiencia y probabilidad.
-        </p>
-        <p class="en">
-            RF optimized via GridSearchCV. SMOTE balanced classes. Predicts efficiency level and probability.
-        </p>
-        <div class="btn-box">
-            <a class="btn" href="https://github.com/DavidGN2016GFS/comparativo-gastos-peru-2012-2025">GitHub</a>
-            <a class="btn" href="https://datosabiertos.mef.gob.pe/dataset/comparacion-de-presupuesto-ejecucion-gasto">Dataset</a>
-        </div>
-    </div>
-
-</div>
 </body>
 </html>
 
